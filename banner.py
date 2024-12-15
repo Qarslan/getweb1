@@ -1,12 +1,9 @@
 import pyfiglet
 from colorama import Fore, init
 
-# Inisialisasi Colorama
 init(autoreset=True)
 
-# Membuat banner dengan pyfiglet
-banner = pyfiglet.figlet_format("WELCOME", font="slant")
+user_text = input("Masukkan teks yang ingin ditampilkan: ")
+banner = pyfiglet.figlet_format(user_text, font="slant")
+print(Fore.MAGENTA + banner)
 
-# Menampilkan banner dengan warna
-print(Fore.CYAN + banner)
-print(Fore.GREEN + "Selamat datang di program kami!")
